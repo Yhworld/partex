@@ -1,0 +1,70 @@
+/* #logo {
+    max-width: 68px;
+    animation: slide-in 1.8s forwards;
+} */
+
+#topbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Transparent to let the skew show behind */
+  z-index: 10; /* Ensure it’s on top of the hero background */
+  color: #fff; /* Adjust color to make it stand out */
+}
+
+
+#brand {
+  height: 100px;
+}
+
+#navbar-test {
+    max-width: 1450px;
+}
+
+/* Base link styling */
+/* Base link styling */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect - Animated underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease; /* Smooth underline transition */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Animate the underline on hover */
+}
+
+/* Active link - Keep the underline visible */
+.active-link::after {
+  width: 100%; /* Static underline for active links */
+  background-color: red; /* Red underline for active links */
+}
+
+
+  
+
+/* Navbar General Styles */
+/* #topbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  } */
+  

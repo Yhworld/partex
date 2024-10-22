@@ -1,0 +1,19 @@
+.hero-img {
+  width: 35%;
+  border-radius: 2rem;
+  background-attachment: fixed;
+}
+
+#hero-test {
+  max-width: 1500px;
+}
+
+#home {
+  background-image:linear-gradient(rgba(12, 12, 12, 0.448) 21.84%, rgba(12, 12, 12, 0.431) 71.03%), url('../../assets/images/hero/top-view-big-meat-slice-raw-meat-with-pepper-greens-dark-surface\ \(1\).webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: calc(55vh - 82px);
+  /* border-radius: 2rem; */
+  background-position: center right;
+}

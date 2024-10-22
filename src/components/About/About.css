@@ -1,0 +1,60 @@
+
+#feature h2 {
+  font-family: var(--secondary-font);
+}
+
+#title {
+  max-width: 8rem;
+}
+
+/* #image1 {
+  max-width: 983px;
+  max-height: 415px;
+} */
+
+h2 {
+  font-family: var(--primary-font);
+}
+
+h2 span {
+  color: #44bb89;
+  padding-left: 1rem;
+}
+
+
+
+#tally  {
+  color: #44bb89;
+}
+
+@media (min-width: 768px) {
+  #manage {
+    margin-top:1rem;
+    margin-bottom: 8rem;
+  }
+}
+
+.gunther {
+    object-fit: cover;
+    height: 360px;
+    border-radius: 1rem;
+}
+
+#about-text {
+    width: 32rem;
+}
+
+#aboutimg{
+    max-width: 680px;
+}
+
+
+@media (max-width: 768px) {
+    #manage {
+      margin-top:1rem;
+    }
+
+    #about-text {
+        width: 100%;
+    }
+  }
