@@ -48,6 +48,14 @@ h2 span {
     max-width: 680px;
 }
 
+ .line {
+  width: 143px;
+  height: 10px;
+  border: solid 5px #000;
+  border-color: red transparent transparent transparent;
+  border-radius: 50% / 10px 10px 0 0;
+}
+
 
 @media (max-width: 768px) {
     #manage {
@@ -58,3 +66,7 @@ h2 span {
         width: 100%;
     }
   }
+  
+  /* #abouttt {
+    background: linear-gradient(180deg, white, white 58%, #D62929 calc(151% + 1px), #c5a6a6 100%);
+  } */
