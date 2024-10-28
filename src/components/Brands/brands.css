@@ -1,0 +1,31 @@
+/* General image styling */
+#test {
+    background: linear-gradient(2400deg, white, white 58%, #D62929 calc(151% + 1px), #D62929 100%);
+
+}
+
+#test img {
+    width: 150px;
+}
+
+
+/* Make the second image wider */
+.secondimg {
+    width: 350px !important; /* Force the width */
+}
+
+
+@media (max-width: 768px) {
+    #test img {
+        white-space: nowrap;
+        animation: scroll-right-to-left 10s linear infinite;
+    }
+    .secondimg {
+        width: 150px !important; /* Force the width */
+    }
+
+    @keyframes scroll-right-to-left {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-400%); }
+    }
+}
