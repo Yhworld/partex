@@ -43,7 +43,7 @@ function Navbar() {
           </NavLink>
           <div className="relative" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
             <button className={`nav-link ${isHomepage ? 'text-black' : 'text-black'}`}>
-              Services
+              Products
             </button>
             {isDropdownOpen && (
               <div className="absolute left-0 w-48 pt-2 bg-white shadow-lg rounded-md">
