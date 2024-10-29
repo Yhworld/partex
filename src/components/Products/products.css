@@ -1,0 +1,8 @@
+#products-page {
+    background-image:linear-gradient(rgba(12, 12, 12, 0.124) 21.84%, rgb(12, 12, 12) 71.03%), url('../../assets/images/hero/set-different-products-healthy-diet-meat-cereals-vegetables-fruits-top-view-high-quality-photo_275899-737.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: calc(38vh - 82px);
+    background-position: 10% 70%;
+}

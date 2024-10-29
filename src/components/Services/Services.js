@@ -4,6 +4,7 @@ import data from './data';
 
 // Assuming you have imported the relevant SVG icons for meat and fruits
 import FruitIcon from '../../assets/images/icons/noun-watermelon-2008615-cropped.svg';
+import { Link } from 'react-router-dom';
 
 function Services() {
   return (
@@ -25,6 +26,7 @@ function Services() {
           {data.map((item, index) => (
             <div key={index} className="card text-gray-300 hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-red-900 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
               <div className="px-8 py-10">
+                <Link to={item.link}>
                 <div className="w-16 h-16 mb-4 group-hover:-translate-y-1 group-hover:shadow-xl transition-all">
                   <img 
                     src={item.image} 
@@ -36,7 +38,7 @@ function Services() {
                 <div className="text-gray-400 mt-8">
                   <p>{item.description}</p>
                 </div>
-              </div>
+              </Link></div>
               <div className="h-2 w-full bg-gradient-to-l via-red-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0" />
               <div className="h-0.5 group-hover:w-full bg-gradient-to-l via-red-950 group-hover:via-red-500 w-[70%] m-auto rounded transition-all" />
             </div>
@@ -45,6 +47,7 @@ function Services() {
           {/* Fruit Supply Card */}
           <div className="card text-gray-300 hover:brightness-90 transition-all cursor-pointer group bg-gradient-to-tl from-gray-900 to-red-900 hover:from-gray-800 hover:to-gray-950 border-r-2 border-t-2 border-gray-900 m-4 rounded-lg overflow-hidden relative">
             <div className="px-8 py-10">
+              <Link to="/products/fruits">
               <div className="w-16 h-16 mb-4 group-hover:-translate-y-1 group-hover:shadow-xl transition-all">
                 <img 
                   src={FruitIcon} 
@@ -66,7 +69,7 @@ function Services() {
               {/* <div className="text-gray-400 mt-8">
                 <p>Our tropical fruits are handpicked from the rich soils of Kenya, ensuring premium quality and flavor. </p>
               </div> */}
-            </div>
+            </Link></div>
             <div className="h-2 w-full bg-gradient-to-l via-yellow-500 group-hover:blur-xl blur-2xl m-auto rounded transition-all absolute bottom-0" />
             <div className="h-0.5 group-hover:w-full bg-gradient-to-l  via-yellow-950 group-hover:via-yellow-500 w-[70%] m-auto rounded transition-all" />
           </div>

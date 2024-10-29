@@ -9,26 +9,31 @@ const data = [
     image: beefIcon,
     title: 'Beef Supply',
     description: "Chilled and frozen beef options available. Halal certified and delivered fresh to Gulf markets.",
+    link: '/products/beef',
   },
   { 
     image: goatIcon,
     title: 'Goat Supply',
     description: "High-quality goat meat with stringent quality control checks. Available in custom cuts and packaging.",
+    link: '/products/goat',
   },
   { 
     image: chickenIcon,
     title: 'Chicken Supply',
     description: "Chilled and frozen chicken, custom packed for client needs. Halal certified and delivered fresh.",
+    link: '/products/chicken',
   },
   { 
     image: ramIcon,
     title: 'Lamb Supply',
     description: "Top-tier lamb meat with strict quality control and freshness guaranteed. Available in chilled and frozen.",
+    link: '/products/lamb',
   },
   { 
     image: fishIcon,
     title: 'Fish Supply',
     description: "Sustainably sourced and freshly harvested, our fish exports are a staple in the Gulf region. We supply a range of fish, ensuring top-quality packaging for longer shelf life and safe transport.",
+    link: '/products/fish',
   }
 ];
 

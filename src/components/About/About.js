@@ -55,10 +55,10 @@ const About = memo(() => {
               </div> */}
               <div className="mt-2">
                 <Link
-                  to="/booking"
+                  to="/http://localhost:3000/get-quotation"
                   className="px-4 py-2 text-base font-medium text-center text-white bg-red-600 border border-transparent rounded-md hover:bg-opacity-90"
                 >
-                  Book Now
+                  Get Quotation
                 </Link>
               </div>
             </div>

@@ -67,6 +67,45 @@ h2 span {
     }
   }
   
-  /* #abouttt {
-    background: linear-gradient(180deg, white, white 58%, #D62929 calc(151% + 1px), #c5a6a6 100%);
-  } */
+  .about-page {
+    background-image:linear-gradient(rgba(12, 12, 12, 0.124) 21.84%, rgb(12, 12, 12) 71.03%), url('../../assets/images/hero/top-view-big-meat-slice-raw-meat-with-pepper-greens-dark-surface\ \(1\).webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: calc(38vh - 82px);
+    background-position: 10% 70%;
+  } 
+  .about-us-container {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    padding: 30px; /* More padding for a spacious feel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  h1 {
+    margin-bottom: 20px; /* Increased spacing below the title */
+  }
+  
+  .drop-cap {
+    position: relative;
+    /* font-size: 1.2rem; */
+  }
+  
+  .drop-cap-letter {
+    font-size: 4rem; /* Larger drop cap for visual impact */
+    line-height: 0.8;
+    font-weight: bold;
+    float: left;
+    margin-right: 8px;
+    color: #D62929; /* Your brand color */
+  }
+  
+  p {
+    margin-bottom: 1.5rem; /* Increased spacing between paragraphs */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    text-align: justify; /* Justify text for a clean look */
+  }
+  
+  

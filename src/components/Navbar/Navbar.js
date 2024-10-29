@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../../assets/images/logo/logo.webp'; // Adjust the path as necessary
-import './navbar.css'
+import './navbar.css';
 
 function Navbar() {
   const location = useLocation();
@@ -42,62 +42,67 @@ function Navbar() {
             About
           </NavLink>
           <div className="relative" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-            <button className={`nav-link ${isHomepage ? 'text-black' : 'text-black'}`}>
+            <NavLink to="/products" className={`nav-link ${isHomepage ? 'text-black' : 'text-black'}`}>
               Products
-            </button>
+            </NavLink>
             {isDropdownOpen && (
               <div className="absolute left-0 w-48 pt-2 bg-white shadow-lg rounded-md">
                 <NavLink
-                  to="/beginner"
+                  to="/products/beef"
                   className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                   onClick={closeMenu}
                 >
-                  Beginner Course
+                  Beef
                 </NavLink>
                 <NavLink
-                  to="/refresher-course"
+                  to="/products/chicken"
                   className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                   onClick={closeMenu}
                 >
-                  Refresher Course
+                  Chicken
                 </NavLink>
                 <NavLink
-                  to="/crash-course"
+                  to="/products/goat"
                   className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
                   onClick={closeMenu}
                 >
-                  Crash Course
+                  Goat
+                </NavLink>
+                <NavLink
+                  to="/products/lamb"
+                  className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
+                  onClick={closeMenu}
+                >
+                  Lamb
+                </NavLink>
+                <NavLink
+                  to="/products/fish"
+                  className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
+                  onClick={closeMenu}
+                >
+                  Fish
+                </NavLink>
+                <NavLink
+                  to="/products/fruits"
+                  className={({ isActive }) => `block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
+                  onClick={closeMenu}
+                >
+                  Fruits
                 </NavLink>
               </div>
             )}
           </div>
+         
           <NavLink
-            to="/areas"
+            to="/contact"
             className={({ isActive }) =>
               `nav-link ${isActive ? 'active-link' : ''} ${isHomepage ? 'text-black' : 'text-black'}`
             }
             onClick={closeMenu}
           >
-            Areas Covered
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className="nav-link"
-            onClick={closeMenu}
-          >
             Contact Us
           </NavLink>
         </div>
-
-        {/* Contact Information */}
-        {/* <div className="hidden md:flex items-center space-x-6">
-          <NavLink
-            to="/booking"
-            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-red-600 rounded-full hover:bg-red-700 focus:shadow-outline focus:outline-none"
-          >
-            Book Now
-          </NavLink>
-        </div> */}
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
@@ -161,56 +166,39 @@ function Navbar() {
             >
               About
             </NavLink>
-            <div>
-              <button className="block w-full text-2xl text-left px-4 py-4 text-black hover:bg-gray-100" onClick={toggleDropdown}>
-                Services
-              </button>
-              {isDropdownOpen && (
-                <div className="bg-white shadow-lg rounded-md">
-                  <NavLink
-                    to="/beginner"
-                    className={({ isActive }) => `nav-link block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
-                    onClick={closeMenu}
-                  >
-                    Beginner Course
-                  </NavLink>
-                  <NavLink
-                    to="/refresher-course"
-                    className={({ isActive }) => `nav-link block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
-                    onClick={closeMenu}
-                  >
-                    Refresher Course
-                  </NavLink>
-                  <NavLink
-                    to="/crash-course"
-                    className={({ isActive }) => `nav-link block px-4 py-2 text-black ${isActive ? 'active-link' : ''}`}
-                    onClick={closeMenu}
-                  >
-                    Crash Course
-                  </NavLink>
-                </div>
-              )}
-            </div>
-            <NavLink
-              to="/areas"
-              className={({ isActive }) => `nav-link block px-4 py-4 text-2xl text-black ${isActive ? 'active-link' : ''}`}
-              onClick={closeMenu}
-            >
-              Areas Covered
+            <div className="relative" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+    <NavLink to="/products" className={`nav-link block px-4 py-4 text-2xl ${isHomepage ? 'text-black' : 'text-black'}`}>
+        Products
+    </NavLink>
+    {isDropdownOpen && (
+        <div className="dropdown">
+            <NavLink to="/products/beef" className="dropdown-link" onClick={closeMenu}>
+                Beef
             </NavLink>
+            <NavLink to="/products/chicken" className="dropdown-link" onClick={closeMenu}>
+                Chicken
+            </NavLink>
+            <NavLink to="/products/goat" className="dropdown-link" onClick={closeMenu}>
+                Goat
+            </NavLink>
+            <NavLink to="/products/lamb" className="dropdown-link" onClick={closeMenu}>
+                Lamb
+            </NavLink>
+            <NavLink to="/products/fish" className="dropdown-link" onClick={closeMenu}>
+                Fish
+            </NavLink>
+            <NavLink to="/products/fruits" className="dropdown-link" onClick={closeMenu}>
+                Fruits
+            </NavLink>
+        </div>
+    )}
+</div>
             <NavLink
               to="/contact"
               className="nav-link block px-4 py-4 text-2xl text-black hover:bg-gray-100"
               onClick={closeMenu}
             >
               Contact Us
-            </NavLink>
-
-            <NavLink
-              to="/booking"
-              className="inline-flex items-center justify-center h-12 px-6 mt-10 font-medium tracking-wide text-white transition duration-200 bg-red-600 rounded-full hover:bg-red-700 focus:shadow-outline focus:outline-none"
-            >
-              Book Now
             </NavLink>
           </div>
         </div>
